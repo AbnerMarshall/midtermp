@@ -6,12 +6,15 @@ import About from './component/about';
 import Contact from './component/contact';
 import './App.css';
 
+
 class App extends Component {
     render() {
         return (
             <Router>
                 <div className="App">
-                    <ul className="App-header">
+                    <div className="PageFormat">
+                        <div className="Appheader">
+                        <ul>
                         <li>
                             <Link to="/">Home</Link>
                         </li>
@@ -22,11 +25,15 @@ class App extends Component {
                             <Link to="/contact">Contact Us</Link>
                         </li>
                     </ul>
+                        </div>
+                        <div className="App-body">
                     <Routes>
                         <Route exact path='/' element={< Home />}></Route>
                         <Route exact path='/about' element={< About />}></Route>
                         <Route exact path='/contact' element={< Contact />}></Route>
                     </Routes>
+                        </div>
+                </div>
                 </div>
             </Router>
         );
