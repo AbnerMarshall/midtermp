@@ -37,12 +37,13 @@ function Home() {
                 return (
                     <Col className="col-3">
                         <Col sm="10" col-lg="3">
-                                <Card key={student.name}>
+                                <Card  key={student.name}>
                                     <Card.Img variant="top" src={require('../Pics/s1.png')}/>
                                     <Card.Body>
                                         <Card.Title>Name : {student.name}</Card.Title>
                                         <Card.Text>GPA : {student.gpa}</Card.Text>
                                     </Card.Body>
+                                    <Button variant="primary">Grade</Button>
                                 </Card>
                             </Col>
                     </Col>
