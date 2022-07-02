@@ -71,8 +71,14 @@ ul li a {
   border-style: solid;
   border-radius: 5px;
   background-color: #293559;
-
 }
 
+.card{
+  padding:2px;
 
+  border-width: 5px;
+  border-style: solid;
+  border-color: #18254f;
+  border-radius: 5px;
+}
 
